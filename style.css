@@ -51,7 +51,7 @@ nav a:hover {
 /* Hero */
 .hero {
   height: 100vh;
-  background: url("img/project1.jpg") center/cover no-repeat;
+  background: url("img/foto.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -333,4 +333,5 @@ h2 {
   text-align: center;
   font-weight: bold;
 }
+
 
