@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Логотип">
+    </div>
+    <nav>
+      <a href="#skills">Навыки</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#experience">Опыт</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><span>Искандар</span> Мирзахмедов</h1>
+      <p>Python-разработчик, Веб-разработчик, Будущий специалист по кибербезопасности</p>
+      
+    </div>
+  </section>
+
+  <!-- Навыки -->
+  <section id="skills" class="skills">
+    <h2>Навыки</h2>
+    <div class="skill">
+      <div class="label">HTML <span class="percent">60%</span></div>
+      <div class="bar"><div class="bar-fill" style="width: 60%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="label">CSS <span class="percent">50%</span></div>
+      <div class="bar"><div class="bar-fill" style="width: 50%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="label">JavaScript <span class="percent">20%</span></div>
+      <div class="bar"><div class="bar-fill" style="width: 20%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="label">Python <span class="percent">100%</span></div>
+      <div class="bar"><div class="bar-fill" style="width: 100%;"></div></div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section id="portfolio">
+    <h2>Портфолио</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="img/iskra.png" alt="Заказ еды" onclick="openLightbox(this)">
+        <h3><a href="https://iskandar009.pythonanywhere.com/" target="_blank">Заказ еды</a></h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="img/mafsa.png" alt="Онлайн магазин" onclick="openLightbox(this)">
+        <h3><a href="https://asadasda.pythonanywhere.com/" target="_blank">Онлайн магазин</a></h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="img/musfinder.png" alt="Музыкальный бот" onclick="openLightbox(this)">
+        <h3><a href="https://t.me/TrackWizardBot" target="_blank">Музыкальный бот на Python</a></h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Опыт -->
+  <section id="experience">
+    <h2>Опыт работы</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>Python-разработка</h3>
+          <span class="date">Декабрь 2024</span>
+          <p>Изучение основ, Создание телеграм-ботов.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h3>Web-разработка</h3>
+          <span class="date">Май 2025</span>
+          <p>Разработка сайтов на HTML, CSS, JavaScript.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>Кибербезопасность</h3>
+          <span class="date">скоро..</span>
+          <p>Обучение и практика в области защиты информации.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact">
+    <h2>Связаться со мной</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" placeholder="Ваш Email" required>
+      <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+
+  <!-- Подключение JS -->
+  <script src="script.js"></script>
+</body>
+</html>
